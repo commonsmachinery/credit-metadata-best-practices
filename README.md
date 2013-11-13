@@ -11,14 +11,15 @@ to credit the creators of digital works.
 The technologies and standards available today provide many different
 mechanisms for doing this.  There are both formal and ad hoc schemas
 for recording the metadata, and many different ways to make the
-information available as embedded or linked metadata.  Tool support
-for this metadata varies a lot.
+information available as embedded or linked metadata.  In addition,
+tool support for this metadata varies a lot, and many metadata sources
+misuse standards or just use partial standards.
 
-There are two general sets of practices here:
+These best practices are intended to handle these complexities by
+providing a set of rules covering:
 
 * How to write metadata that is robust and can be understood by many
   applications and services.
-
 * How to parse existing metadata to extract as much information as
   possible, even when it is ad-hoc or patchy
 
@@ -86,7 +87,7 @@ e.g. ```dc:title```.
 
 Namespace definitions are generally excluded from inline examples (but
 not from standalone example files).  The following set of namespaces
-are used, including some de facto namespaces that is only identified
+are used, including some de facto namespaces that are only identified
 by their prefixes:
 
 <table>
@@ -104,6 +105,11 @@ by their prefixes:
   <td>cc:</td>
   <td>ccRel</td>
   <td>http://creativecommons.org/ns#</td>
+ </tr>
+ <tr>
+  <td>xhv:</td>
+  <td>XHTML</td>
+  <td>http://www.w3.org/1999/xhtml/vocab#</td>
  </tr>
  <tr>
   <td>og:</td>
