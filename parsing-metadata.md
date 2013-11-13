@@ -140,7 +140,7 @@ http://wiki.creativecommons.org/Property:License_short_name
 
 Creative Common licenses, match groups are: type, version, optional jurisdiction.
 
-```^https?://creativecommons.org/licenses/([-a-z]+)/([0-9.]+)/(?:([a-z]+)/)?(?:deed\..*)?$```
+    ^https?://creativecommons.org/licenses/([-a-z]+)/([0-9.]+)/(?:([a-z]+)/)?(?:deed\..*)?$
 
 The short name is ```CC type version (jurisdiction)/Unported```,
 e.g. ```CC BY 3.0 Unported``` or ```CC BY-NC 3.0 (AU)```.
@@ -148,17 +148,16 @@ e.g. ```CC BY 3.0 Unported``` or ```CC BY-NC 3.0 (AU)```.
 Public domain marks from Creative Commons, match groups are: type,
 version.
 
-```^https?://creativecommons.org/publicdomain/([a-z]+)/([0-9.]+)/(?:deed\..*)$?```
+    ^https?://creativecommons.org/publicdomain/([a-z]+)/([0-9.]+)/(?:deed\..*)$?
 
 The short name for type ```zero``` is ```CC0 version```.  For type
 ```mark``` it is "public domain".
-
 (Creative Commons recommend PD, but that is too non-descript to be
 understood as a rights term.)
 
 Free Art License, match group is: language or version.
 
-```^https?://artlibre.org/licence/lal(?:/([-a-z0-9]+))?$```
+    ^https?://artlibre.org/licence/lal(?:/([-a-z0-9]+))?$
 
 
 
