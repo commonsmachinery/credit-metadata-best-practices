@@ -20,13 +20,14 @@ Format
 
 Put metadata on the clipboard as RDF/XML.  
   
-## Windows and X Windows
+### Windows and X Windows
 
 Use the MIME type `application/rdf+xml`.
 
-## MacOSX
+### MacOSX
 
-__TODO__: There is no Uniform Type Identifier defined for RDF/XML yet. A type
+[__TODO__](https://github.com/commonsmachinery/credit-metadata-best-practices/issues/1):
+There is no Uniform Type Identifier defined for RDF/XML yet. A type
 something like `public.rdf.xml` should be registered by W3C.
 
 
@@ -42,7 +43,7 @@ The RDF/XML can come from two sources:
   RDFa parser to extract all triples about the object, as well as
   triples for source works and other references that are also present.
 
-## Subject URI
+### Subject URI
 
 The subject URI should be retained for the copied object.  Lacking one
 (as XMP does), use the URL of the copied object as subject URI.
@@ -60,7 +61,8 @@ And in Turtle notation:
     <> dc:source <copied-subject-URI> .
 
 
-__TODO__: some RDF libraries seem to have a trouble with the empty URI
+[__TODO__](https://github.com/commonsmachinery/credit-metadata-best-practices/issues/2):
+some RDF libraries seem to have a trouble with the empty URI
 `<>`.  This recommendation also means that an XMP packet can't be put
 on the clipboard as-is as a sidecar, but first has to be modified.
 Because of these problems, it may be a better approach to put the
@@ -68,8 +70,8 @@ subject URI as a separate representation on the clipboard with an
 appropriate type.
 
 
-Pasting metadat
----------------
+Pasting metadata
+----------------
 
 When pasting an object, the destination application should see if it
 can get RDF/XML from the clipboard in addition to the object itself.
@@ -80,5 +82,6 @@ graph for
     <> dc:source ?copiedSubjectURI
 
 
-__TODO__: As noted above, it might be better to get the subject URI
+[__TODO__](https://github.com/commonsmachinery/credit-metadata-best-practices/issues/2):
+As noted above, it might be better to get the subject URI
 from the clipboard instead.
