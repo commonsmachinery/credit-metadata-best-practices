@@ -24,6 +24,20 @@ providing a set of rules covering:
   possible, even when it is ad-hoc or patchy
 
 
+Index
+-----
+
+There's one file per main topic, all written with [Github Markdown
+syntax](https://help.github.com/articles/github-flavored-markdown).
+
+* [Finding metadata](finding-metadata.md)
+* [Parsing metadata](parsing-metadata.md)
+* [Metadata on the clipboard](clipboard.md)
+
+Example files may later be added in a subdirectory.
+
+
+
 Contribute
 ----------
 
@@ -68,15 +82,6 @@ information itself, beyond a set of standard URIs (e.g. the Creative
 Commons license deeds).  How to guide or even force users to comply
 with the license of the work when redistributing or remixing works is
 not covered here either.
-
-
-Document structure
-------------------
-
-There's one file per main topic, all written with [Github Markdown
-syntax](https://help.github.com/articles/github-flavored-markdown).
-
-Example files may later be added in a subdirectory.
 
 
 Notation
